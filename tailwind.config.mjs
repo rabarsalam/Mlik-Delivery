@@ -10,7 +10,9 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        lightgreen: "#71AA38",
       },
+      
     },
   },
   plugins: [],
