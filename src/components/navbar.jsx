@@ -11,7 +11,7 @@ export default function Navbar() {
   }
   return (
     <>
-              <nav className="w-full h-16 p-10  bg-white flex justify-between  items-center">
+              <nav className=" h-16 p-10  bg-white flex justify-between  items-center  ">
           <div>
             <Image src={logoimg} width={150} height={150} alt="logo" />
           </div>
