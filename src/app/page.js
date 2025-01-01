@@ -1,6 +1,9 @@
 import Image from "next/image";
 import PhoneFrame from "../../public/Images/phone.svg";
 import MilkSection from "../../public/Images/Milk.svg";
+import Delivery from "../../public/Images/delivery.png";
+import Localstore from "../../public/Images/local.png";
+import Map from "../../public/Images/map.png";
 export default function Home() {
   return (
     <div className="">
@@ -32,8 +35,9 @@ export default function Home() {
         {/* === Phone Frame === */}
       </div>
       {/* === First Section === */}
-      {/* Milk Section */}
+      {/* Second Section */}
       <div className="w-full relative ">
+        {/* Milk Section */}
         <Image
           src={MilkSection}
           style={{
@@ -48,13 +52,52 @@ export default function Home() {
           }}
           alt="Milk"
         />
+        {/* === Milk Section === */}
+        {/* What We Are */}
+        <div className="flex flex-col justify-center items-center absolute top-96 left-0 right-0">
+          <h1 className="text-4xl font-bold">Why are we unique ?</h1>
+          <div className="grid grid-cols-1  lg:grid-cols-3 justify-center items-center lg:gap-56 mt-8 capitalize">
+            {/* Delivery */}
+            <div className="w-72 flex flex-col text-center items-center">
+              <Image src={Delivery} width={150} height={150} alt="Map" />
+              <h1 className="font-semibold mb-4 text-lg">
+                We’ve upped the game.
+              </h1>
+              <p className="text-sm">
+                We carry a variety of products through our unique vendors that
+                you can’t typically get delivered.
+              </p>
+            </div>
+            {/* === Delivery === */}
+            {/* Local Store */}
+            <div className="w-72 flex flex-col text-center items-center">
+              <Image src={Localstore} width={150} height={150} alt="Map" />
+              <h1 className="font-semibold mb-4 text-lg">
+                Order From our virtual mall of Local Stores
+              </h1>
+              <p className="text-sm">
+                Order from a large variety of local stores you like and trust
+                for years you can’t typically get delivered.
+              </p>
+            </div>
+            {/* === Local Store === */}
+            {/* Map */}
+            <div className="w-72 flex flex-col text-center items-center">
+              <Image src={Map} width={150} height={150} alt="Map" />
+              <h1 className="font-semibold mb-4 text-lg">
+                Easy Access to Local services
+              </h1>
+              <p className="text-sm ">
+                Easy access to local services such as dry cleaning, we can pick
+                it up and drop it off to make your
+              </p>
+            </div>
+            {/* === Map === */}
+          </div>
+        </div>
+        {/* === What We Are === */}
       </div>
-      {/* === Milk Section === */}
-      {/* What We Are */}
-      <div className="flex justify-center items-center">
-        <h1>Why are we unique ?</h1>
-      </div>
-      {/* === What We Are === */}
+      {/* === Second Section === */}
     </div>
   );
 }
