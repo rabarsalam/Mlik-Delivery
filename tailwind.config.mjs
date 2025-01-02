@@ -12,7 +12,13 @@ export default {
         foreground: "var(--foreground)",
         lightgreen: "#71AA38",
       },
-      
+      height:{
+        '128':'1000px'
+      },
+      inset:{
+        '33px':"33px",
+        '6px':'6px'
+      },
     },
   },
   plugins: [],

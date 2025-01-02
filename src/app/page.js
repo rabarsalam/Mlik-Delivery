@@ -4,11 +4,7 @@ import MilkSection from "../../public/Images/Milk.svg";
 import Delivery from "../../public/Images/delivery.png";
 import Localstore from "../../public/Images/local.png";
 import Map from "../../public/Images/map.png";
-import Banner from "../../public/Images/Thought .png";
-import CupMilk from "../../public/Images/cupmilk.png";
-import IphoneB from "../../public/Images/Mask group.png";
-import Playstore from "../../public/Images/play-store.svg";
-import Appstore from "../../public/Images/app-store.svg";
+import Adsection from "@/components/adsection";
 export default function Home() {
   return (
     <div className="">
@@ -104,45 +100,9 @@ export default function Home() {
       </div>
       {/* === Second Section === */}
       {/* Spacing */}
-      <div style={{ width: "100%", height: "550px" }}></div>
+      <div style={{ width: "100%", height: "50px" }}></div>
       {/* === Spacing === */}
-      {/* Application Ad*/}
-      <div className="relative mt-96 lg:mt-0 ">
-        <Image
-          src={Banner}
-          className="w-full h-full fill"
-          style={{
-            zIndex: "-1",
-            overflow: "hidden",
-          }}
-          alt="Banner"
-        />
-        <div className="grid grid-cols-1  lg:grid-cols-2 gap-28 items-center absolute top-0 left-0 right-0">
-          {/* Banner Content */}
-          <div className="capitalize text-white  flex flex-col gap-3 p-16  items-start justify-start">
-            <h1 className="text-base lg:text-3xl font-semibold">the innovative way to shop</h1>
-            <p className="text-xs font-thin lg:font-light ">
-              When you join DeliverZe you will enjoy our new and improved way of
-              shopping through our virtual mall experience
-            </p>
-            <div className="flex">
-              <Image
-                src={Playstore}
-                alt="Play Store"
-              />
-              <Image src={Appstore} alt="App Store" />
-            </div>
-          </div>
-          {/* === Banner Content === */}
-          {/* Banner Icons */}
-          <div className="">
-            <Image className="  " src={IphoneB}  alt="Iphone" />
-            <Image src={CupMilk} className=" " alt="Cup Of Milk" />
-          </div>
-          {/* === Banner Icons === */}
-        </div>
-      </div>
-      {/* === Application Ad === */}
+      <Adsection />
     </div>
   );
 }
