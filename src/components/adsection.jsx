@@ -4,15 +4,17 @@ import CupMilk from "../../public/Images/cupmilk.png";
 import IphoneB from "../../public/Images/Mask group.png";
 import Playstore from "../../public/Images/play-store.svg";
 import Appstore from "../../public/Images/app-store.svg";
+import Banner2 from "../../public/Images/Thought of the Day Icoderz 2.png";
+import Banner3 from "../../public/Images/Thought of the Day Icoderz 3.png";
 export default function Adsection() {
   return (
     <>
     
             {/* Application Ad*/}
-            <div className=" relative mt-96 lg:mt-0 ">
+            <div className="hidden md:block relative  lg:mt-0 ">
         <Image
           src={Banner}
-          className="w-full h-128 md:h-full "
+          className="w-full md:h-full "
           style={{ overflow: "hidden" }}
           alt="Banner"
         />
@@ -30,12 +32,14 @@ export default function Adsection() {
                 width={200}
                 height={50}
                 alt="Play Store"
+                className="cursor-pointer"
               />
               <Image
                 src={Appstore}
                 width={200}
                 height={50}
                 alt="App Store"
+                className="cursor-pointer"
               />
             </div>
           </div>
@@ -60,6 +64,68 @@ export default function Adsection() {
         </div>
       </div>
       {/* === Application Ad === */}
+      {/* Application Ad Mobile */}
+      <div className=" lg:hidden relative  lg:mt-0 ">
+        <div className="relative">
+            <Image
+            src={Banner2}
+            className="w-full md:h-full absolute"
+            style={{ overflow: "hidden" }}
+            alt="Banner"
+            />
+            <Image
+            src={Banner3}
+            className="w-full md:h-full absolute -top-72"
+            style={{ overflow: "hidden" }}
+            alt="Banner"
+            />
+          </div>
+         <div style={{top:"-34px"}} className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center absolute px-6   ">
+          {/* Banner Content */}
+          <div className="text-white flex flex-col gap-4 items-center justify-center">
+            <h1 className="text-base lg:text-4xl font-semibold">the innovative way to shop</h1>
+            <p className="text-sm font-thin lg:font-light text-center">
+              When you join DeliverZe you will enjoy our new and improved way of
+              shopping through our virtual mall experience
+            </p>
+            <div className="flex flex-col  ">
+            <Image
+                src={Playstore}
+                width={200}
+                height={50}
+                alt="Play Store"
+                className="cursor-pointer"
+              />
+              <Image
+                src={Appstore}
+                width={200}
+                height={50}
+                alt="App Store"
+               className="cursor-pointer"
+              />
+            </div>
+          </div>
+          {/* === Banner Content === */}
+          {/* Banner Icons */}
+          <div style={{bottom:"147.5px",left:"13px"}} className="relative flex justify-center items-center " >
+            <Image
+              className="z-10 w-72"
+              src={IphoneB}
+              layout="intrinsic"
+              alt="iPhone Mockup"
+            />
+            <Image
+              src={CupMilk}
+              className="absolute bottom-0 right-14 w-40"
+              layout="intrinsic"
+              alt="Cup of Milk"
+              style={{zIndex:"111"}}
+            />
+          </div>
+          {/* === Banner Icons === */}
+        </div>
+      </div>
+      {/* === Application Ad Mobile === */}
     </>
   )
 }

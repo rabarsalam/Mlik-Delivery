@@ -100,7 +100,7 @@ export default function Home() {
       </div>
       {/* === Second Section === */}
       {/* Spacing */}
-      <div style={{ width: "100%", height: "50px" }}></div>
+      <div className="h-128 lg:h-12"></div>
       {/* === Spacing === */}
       <Adsection />
     </div>
