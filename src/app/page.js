@@ -5,6 +5,13 @@ import Delivery from "../../public/Images/delivery.png";
 import Localstore from "../../public/Images/local.png";
 import Map from "../../public/Images/map.png";
 import Adsection from "@/components/adsection";
+import Rsection from "../../public/Images/asd.svg";
+import Iphone14 from "../../public/Images/Iphone 14.svg";
+import download from "../../public/Images/download.svg";
+import smile from "../../public/Images/smile.svg";
+import person from "../../public/Images/person.svg";
+import star from "../../public/Images/star.svg";
+import Carousel from "@/components/carousel";
 export default function Home() {
   return (
     <div className="">
@@ -102,7 +109,143 @@ export default function Home() {
       {/* Spacing */}
       <div className="h-128 lg:h-12"></div>
       {/* === Spacing === */}
+      {/* Application Ad*/}
       <Adsection />
+      {/* === Application Ad === */}
+      {/* Spacing */}
+      <div className=" md:hidden" style={{ height: "600px" }}></div>
+      {/* === Spacing === */}
+      {/* App Feature */}
+      <div className="flex flex-col justify-center items-center gap-10">
+        <div className="flex flex-col justify-center items-center gap-2">
+          <h5 className="uppercase underline  text-lightgreen font-medium text-2xl">
+            Features
+          </h5>
+          <h1 className="capitalize font-bold text-5xl">awosome features</h1>
+        </div>
+        <div className="grid grid-cols-3 ">
+          <div className="flex justify-between items-start">
+            <div className="flex md:flex-col  gap-28 mt-24">
+              <div className="flex flex-col gap-6">
+                <h1 className="font-semibold">Near By Stores</h1>
+                <p className="font-light">
+                  Discover Local Stores based on your GPS location
+                </p>
+              </div>
+              <div className="flex flex-col gap-6">
+                <h1 className="font-semibold">Near By Stores</h1>
+                <p className="font-light">
+                  Discover Local Stores based on your GPS location
+                </p>
+              </div>
+              <div className="flex flex-col gap-6">
+                <h1 className="font-semibold">Near By Stores</h1>
+                <p className="font-light">
+                  Discover Local Stores based on your GPS location
+                </p>
+              </div>
+            </div>
+            <Image
+              src={Rsection}
+              className="rotate-90 lg:rotate-0"
+              alt="Right Section"
+            />
+          </div>
+          <div>
+            <Image src={Iphone14} alt="Right Section" />
+          </div>
+          <div className="flex justify-between items-start ">
+            <Image
+              src={Rsection}
+              className="rotate-90 lg:rotate-0"
+              alt="Right Section"
+            />
+            <div className="flex md:flex-col  gap-28 mt-24">
+              <div className="flex flex-col gap-6">
+                <h1 className="font-semibold">Near By Stores</h1>
+                <p className="font-light">
+                  Discover Local Stores based on your GPS location
+                </p>
+              </div>
+              <div className="flex flex-col gap-6">
+                <h1 className="font-semibold">Near By Stores</h1>
+                <p className="font-light">
+                  Discover Local Stores based on your GPS location
+                </p>
+              </div>
+              <div className="flex flex-col gap-6">
+                <h1 className="font-semibold">Near By Stores</h1>
+                <p className="font-light">
+                  Discover Local Stores based on your GPS location
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* === App Feature === */}
+      {/* App Download */}
+      <div className="grid justify-center items-center gap-20">
+        <div className="flex flex-col justify-center items-center gap-6">
+          <h5 className="uppercase underline  text-lightgreen font-medium text-xl">
+            Lorem IPSUM
+          </h5>
+          <h1 className="capitalize font-bold text-5xl">App Download</h1>
+        </div>
+        <div className="grid  lg:grid-cols-4 gap-20 items-center justify-center">
+          <div className="w-48 h-20 bg-white rounded-lg relative px-3 py-2 flex flex-col gap-2">
+            <Image
+              src={download}
+              className="absolute -top-5 right-8"
+              width={50}
+              height={50}
+              alt="Download"
+            />
+            <h1 className="text-3xl font-semibold">1000</h1>
+            <p className="text-sm ">App Download</p>
+          </div>
+          <div className="w-48 h-20 bg-white rounded-lg relative px-3 py-2 flex flex-col gap-2">
+            <Image
+              src={smile}
+              className="absolute -top-5 right-8"
+              width={50}
+              height={50}
+              alt="Download"
+            />
+            <h1 className="text-3xl font-semibold">2000</h1>
+            <p className="text-sm ">Happy Clients</p>
+          </div>
+          <div className="w-48 h-20 bg-white rounded-lg relative px-3 py-2 flex flex-col gap-2">
+            <Image
+              src={person}
+              className="absolute -top-5 right-8"
+              width={50}
+              height={50}
+              alt="Download"
+            />
+            <h1 className="text-3xl font-semibold">400</h1>
+            <p className="text-sm uppercase ">Active Accounts</p>
+          </div>
+          <div className="w-48 h-20 bg-white rounded-lg relative px-3 py-2 flex flex-col gap-2">
+            <Image
+              src={star}
+              className="absolute -top-5 right-8"
+              width={50}
+              height={50}
+              alt="Download"
+            />
+            <h1 className="text-3xl font-semibold">200</h1>
+            <p className="text-sm ">TOTAL APP RATES</p>
+          </div>
+        </div>
+      </div>
+      {/* === App Download === */}
+      {/* Spacing */}
+      <div className=" " style={{ height: "250px" }}></div>
+      {/* === Spacing === */}
+      {/* Carousel Part */}
+      <Carousel />
+      {/* === Carousel Part === */}
     </div>
   );
 }

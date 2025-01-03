@@ -14,7 +14,7 @@ export default function Adsection() {
             <div className="hidden md:block relative  lg:mt-0 ">
         <Image
           src={Banner}
-          className="w-full md:h-full "
+          className="w-full md:h-full drop-shadow-[0_25px_35px_#000000FF]"
           style={{ overflow: "hidden" }}
           alt="Banner"
         />
@@ -65,20 +65,40 @@ export default function Adsection() {
       </div>
       {/* === Application Ad === */}
       {/* Application Ad Mobile */}
-      <div className=" lg:hidden relative  lg:mt-0 ">
+      <div className=" md:hidden relative  lg:mt-0 ">
         <div className="relative">
             <Image
             src={Banner2}
-            className="w-full md:h-full absolute"
+            className="w-full md:h-full absolute drop-shadow-[0_25px_35px_#000000FF]"
             style={{ overflow: "hidden" }}
             alt="Banner"
             />
             <Image
             src={Banner3}
-            className="w-full md:h-full absolute -top-72"
+            className="w-full md:h-full absolute -top-52"
             style={{ overflow: "hidden" }}
             alt="Banner"
             />
+            {/* Banner Icons */}
+            <div className="absolute top-10 right-6">
+
+                <div className="relative flex justify-center items-center " >
+                  <Image
+                    className="z-10 w-72"
+                    src={IphoneB}
+                    layout="intrinsic"
+                    alt="iPhone Mockup"
+                    />
+                  <Image
+                    src={CupMilk}
+                    className="absolute bottom-0 right-14 w-40"
+                    layout="intrinsic"
+                    alt="Cup of Milk"
+                    style={{zIndex:"111"}}
+                    />
+                </div>
+             </div>
+          {/* === Banner Icons === */}
           </div>
          <div style={{top:"-34px"}} className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center absolute px-6   ">
           {/* Banner Content */}
@@ -106,23 +126,7 @@ export default function Adsection() {
             </div>
           </div>
           {/* === Banner Content === */}
-          {/* Banner Icons */}
-          <div style={{bottom:"147.5px",left:"13px"}} className="relative flex justify-center items-center " >
-            <Image
-              className="z-10 w-72"
-              src={IphoneB}
-              layout="intrinsic"
-              alt="iPhone Mockup"
-            />
-            <Image
-              src={CupMilk}
-              className="absolute bottom-0 right-14 w-40"
-              layout="intrinsic"
-              alt="Cup of Milk"
-              style={{zIndex:"111"}}
-            />
-          </div>
-          {/* === Banner Icons === */}
+          
         </div>
       </div>
       {/* === Application Ad Mobile === */}
