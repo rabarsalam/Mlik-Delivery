@@ -125,7 +125,7 @@ export default function Home() {
       <div className=" md:hidden" style={{ height: "600px" }}></div>
       {/* === Spacing === */}
       {/* App Feature */}
-      <div className="flex flex-col justify-center items-center gap-10">
+      <div className="flex flex-col justify-center items-center gap-10 overflow-hidden">
         <div className="flex flex-col justify-center items-center gap-2">
           <h5 className="uppercase underline  text-lightgreen font-medium text-2xl">
             Features
