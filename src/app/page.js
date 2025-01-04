@@ -72,7 +72,9 @@ export default function Home() {
         {/* === Milk Section === */}
         {/* What We Are */}
         <div className="flex flex-col justify-center items-center absolute top-96 left-0 right-0">
-          <h1 className="text-4xl font-bold">Why are we unique ?</h1>
+          <h1 className="text-4xl font-bold sm:text-center">
+            Why are we unique ?
+          </h1>
           <div className="grid grid-cols-1  lg:grid-cols-3 justify-center items-center lg:gap-56 mt-8 capitalize">
             {/* Delivery */}
             <div className="w-72 flex flex-col text-center items-center">
@@ -334,7 +336,7 @@ export default function Home() {
       {/* === Contact Section ===*/}
       {/* Footer */}
       <div>
-        <div className=" relative">
+        <div className=" relative overflow-hidden">
           <Image
             src={MilkWave}
             alt="Milk Wave"
@@ -381,14 +383,29 @@ export default function Home() {
             </ul>
           </div>
           <div className="flex gap-4 items-center justify-center">
-            <Link href="">
-              <Image src={Facebook} width={30} height={30} alt="Rabar" />
+            <Link href="https://www.facebook.com/r4b0r/">
+              <Image
+                src={Facebook}
+                width={30}
+                height={30}
+                alt="https://www.facebook.com/r4b0r/"
+              />
             </Link>
-            <Link href="">
-              <Image src={X} width={30} height={30} alt="Rabar" />
+            <Link href="https://x.com/rabarkg">
+              <Image
+                src={X}
+                width={30}
+                height={30}
+                alt="https://x.com/rabarkg"
+              />
             </Link>
-            <Link href="">
-              <Image src={Instagram} width={30} height={30} alt="Rabar" />
+            <Link href="https://www.instagram.com/rabarsalam/">
+              <Image
+                src={Instagram}
+                width={30}
+                height={30}
+                alt="https://www.instagram.com/rabarsalam/"
+              />
             </Link>
           </div>
         </footer>

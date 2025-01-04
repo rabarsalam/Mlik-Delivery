@@ -15,6 +15,7 @@ export default {
       height: {
         120: "600px",
         128: "1000px",
+        136:"1800px"
       },
       width: {
         128: "650px",
