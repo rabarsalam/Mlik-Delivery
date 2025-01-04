@@ -1,4 +1,6 @@
+import Form from "next/form";
 import Image from "next/image";
+import logoimg from "../../public/Images/a.svg";
 import PhoneFrame from "../../public/Images/phone.svg";
 import MilkSection from "../../public/Images/Milk.svg";
 import Delivery from "../../public/Images/delivery.png";
@@ -12,6 +14,13 @@ import smile from "../../public/Images/smile.svg";
 import person from "../../public/Images/person.svg";
 import star from "../../public/Images/star.svg";
 import Carousel from "@/components/carousel";
+import Drinking from "../../public/Images/Drinking.svg";
+import MilkBackground from "../../public/Images/MilkBack.svg";
+import MilkWave from "../../public/Images/MilkWave.svg";
+import Facebook from "../../public/Images/fb-ic.svg";
+import X from "../../public/Images/tweet-ic.svg";
+import Instagram from "../../public/Images/insta-ic.svg";
+import Link from "next/link";
 export default function Home() {
   return (
     <div className="">
@@ -246,6 +255,148 @@ export default function Home() {
       {/* Carousel Part */}
       <Carousel />
       {/* === Carousel Part === */}
+      {/* Spacing */}
+      <div className=" " style={{ height: "550px" }}></div>
+      {/* === Spacing === */}
+      {/* Review Section */}
+      <div className="grid grid-cols-2 gap-72  p-10">
+        {/* Content */}
+        <div className="grid grid-cols-1 justify-start items-start gap-6">
+          <h5 className="uppercase underline  text-lightgreen font-medium text-xl">
+            Reviews
+          </h5>
+          <h1 className="capitalize font-bold text-5xl">Client Reviews</h1>
+          <p className="capitalize font-light">
+            Love the app!! I&apos;m looking forward for them to add more of my
+            favorite stores so i can use them more offen. Lorem Ipsum is simply
+            dummy text of the printing and typesetting industry. Lorem Ipsum has
+            been the industry&apos;s standard dummy text ever since the 1500s,{" "}
+          </p>
+          <div>
+            <div className="flex gap-4">
+              <Image
+                src={person}
+                width={50}
+                height={50}
+                className=" border-lightgreen border-2 rounded-full"
+                alt="Client"
+              />
+              <div>
+                <h1 className="capitalize text-lightgreen font-semibold text-xl">
+                  Allhalal
+                </h1>
+                <h3 className="capitalize font-light">
+                  Finally a great app with variety
+                </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        {/* Content */}
+        <div className="grid grid-cols-1">
+          <Image src={Drinking} width={500} height={500} alt="Drinking Milk" />
+        </div>
+      </div>
+      {/* === Review Section === */}
+      {/* Contact Section */}
+      <div className=" flex items-center relative ">
+        <Image src={MilkBackground} className="w-full" alt="Background" />
+        <div className="bg-white absolute right-44 bottom-36 w-128 h-120 p-7 rounded-xl ">
+          <h1 className="capitalize text-lightgreen underline font-medium text-xl">
+            Contact us
+          </h1>
+          <h3 className="capitalize font-bold text-4xl mt-3">
+            Get in touch with us!{" "}
+          </h3>
+          <Form action="/search" className="mt-7 grid gap-3">
+            <input
+              className="border-2 p-4 w-full rounded-lg"
+              placeholder="Your Name"
+            />
+            <input
+              className="border-2 p-4 w-full rounded-lg"
+              placeholder="Your Email"
+            />
+            <textarea
+              rows="7"
+              className="border-2 p-4 w-full rounded-lg resize-none"
+              placeholder="Your Message"
+            />
+            <button
+              type="submit"
+              className="bg-lightgreen text-white font-semibold rounded-xl w-32 mt-6  p-2 drop-shadow-[0_15px_35px_#71AA38]"
+            >
+              Send Now
+            </button>
+          </Form>
+        </div>
+      </div>
+      {/* === Contact Section ===*/}
+      {/* Footer */}
+      <div>
+        <div className=" relative">
+          <Image
+            src={MilkWave}
+            alt="Milk Wave"
+            className="w-full absolute  "
+            style={{ top: "-130px" }}
+          />
+        </div>
+        {/* Spacing */}
+        <div className=" " style={{ height: "250px" }}></div>
+        {/* === Spacing === */}
+        <footer className=" h-16 p-10 flex justify-between  items-center  ">
+          <div>
+            <Image src={logoimg} width={150} height={150} alt="logo" />
+          </div>
+          <div>
+            <ul className="text-black  gap-8  font-semibold   flex items-center ">
+              <div className=" flex gap-6   p-6 items-center  w-full    ">
+                <Link
+                  href="/About"
+                  className=" hover:text-green-600 duration-150"
+                >
+                  About
+                </Link>
+
+                <Link
+                  href="/Terms & Conditions"
+                  className="hover:text-green-600 duration-150"
+                >
+                  Terms & Conditions
+                </Link>
+                <Link
+                  href="/Privacy Policy"
+                  className="hover:text-green-600 duration-150"
+                >
+                  Privacy Policy
+                </Link>
+                <Link
+                  href="/Contact"
+                  className="hover:text-green-600 duration-150"
+                >
+                  Contact
+                </Link>
+              </div>
+            </ul>
+          </div>
+          <div className="flex gap-4 items-center justify-center">
+            <Link href="">
+              <Image src={Facebook} width={30} height={30} alt="Rabar" />
+            </Link>
+            <Link href="">
+              <Image src={X} width={30} height={30} alt="Rabar" />
+            </Link>
+            <Link href="">
+              <Image src={Instagram} width={30} height={30} alt="Rabar" />
+            </Link>
+          </div>
+        </footer>
+      </div>
+      <div className="text-center mb-7 text-sm">
+        <p>Copyright ©2025 deonde.</p>
+      </div>
+      {/* === Footer === */}
     </div>
   );
 }

@@ -12,12 +12,20 @@ export default {
         foreground: "var(--foreground)",
         lightgreen: "#71AA38",
       },
-      height:{
-        '128':'1000px'
+      height: {
+        120: "600px",
+        128: "1000px",
       },
-      inset:{
-        '33px':"33px",
-        '6px':'6px'
+      width: {
+        128: "650px",
+      },
+      inset: {
+        "33px": "33px",
+        "6px": "6px",
+      },
+      backgroundImage: {
+        blackoverlay:
+          "linear-gradient(to top, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%)",
       },
     },
   },
